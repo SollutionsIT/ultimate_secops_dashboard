@@ -6,7 +6,7 @@ from PIL import Image
 from PIL.ExifTags import TAGS, GPSTAGS
 
 # 1. PAGE CONFIGURATION (Must be only one per file!)
-st.set_page_config(page_title="SecOps Dashboard", page_icon="🛡️", layout="wide")
+st.set_page_config(page_title="SecOps Dashboard (Soliannikov - example Python + CI/CD with security)", page_icon="🛡️", layout="wide")
 
 # --- SIDEBAR (Settings) ---
 with st.sidebar:
