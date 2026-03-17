@@ -132,9 +132,9 @@ def calculate_file_hashes(file_path):
     with open(file_path, "rb") as f:
         file_bytes = f.read()
         
-        md5 = hashlib.md5(file_bytes).hexdigest()
-        sha1 = hashlib.sha1(file_bytes).hexdigest()
-        sha256 = hashlib.sha256(file_bytes).hexdigest()
+        md5 = hashlib.md5(file_bytes).hexdigest() #nosec
+        sha1 = hashlib.sha1(file_bytes).hexdigest() #nosec
+        sha256 = hashlib.sha256(file_bytes).hexdigest() #nosec
         
         print(f"\n--- HASH ANALYSIS: {os.path.basename(file_path)} ---")
         print(f"MD5:     {md5}")
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     check_ip_reputation(IP_TO_CHECK, ABUSE_IPDB_API_KEY)
     
     # Example 2: Check Image (Uncomment and replace with a real image path to test)
-    # analyze_image_metadata("sample_image.jpg")
+    analyze_image_metadata("sample_image.jpg")
     
     # Example 3: Calculate File Hashes
-    # calculate_file_hashes("sample_file.exe")
+    calculate_file_hashes("sample_file.exe")

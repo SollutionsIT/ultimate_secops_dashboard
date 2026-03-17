@@ -58,10 +58,10 @@ def check_virustotal(file_hash, api_key):
         return {"error": str(e)}
 
 def get_file_hashes(file_bytes):
-    """Generates MD5, SHA-1, and SHA-256 hashes of a file."""
+    #Generates MD5, SHA-1, and SHA-256 hashes of a file.
     return {
-        "md5": hashlib.md5(file_bytes).hexdigest(),
-        "sha1": hashlib.sha1(file_bytes).hexdigest(),
+        "md5": hashlib.md5(file_bytes).hexdigest(),    # nosec
+        "sha1": hashlib.sha1(file_bytes).hexdigest(),   # nosec
         "sha256": hashlib.sha256(file_bytes).hexdigest()
     }
 
