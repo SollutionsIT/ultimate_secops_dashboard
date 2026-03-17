@@ -105,7 +105,7 @@ def extract_metadata(image_file):
         return {"Error": str(e)}, None, None, None
 
 # --- MAIN INTERFACE ---
-st.title("🛡️ SecOps: Threat Intel & Advanced Forensics")
+st.title("🛡️ SecOps Dashboard (Soliannikov - example Python + CI/CD with security)")
 
 # Tabs
 tab1, tab2 = st.tabs(["🌐 IP Reputation", "🔬 File Forensics"])
