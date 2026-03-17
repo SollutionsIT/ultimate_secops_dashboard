@@ -6,6 +6,9 @@
 
 # 🛡️ SecOps Threat Intel Dashboard
 
+Online demo: 
+<src="https://ultimate-secops-dashboard.streamlit.app/"/>
+
 A tool for checking the reputation of IP addresses for cyber threats. The project includes an interactive web dashboard and automated risk assessment logic.
 
 ## 🌟 Key Features
